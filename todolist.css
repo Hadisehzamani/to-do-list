@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #A0C49D;
+    font-family: 'Roboto Slab', serif;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 90%;
+    background-color: #E1ECC8;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.task-name {
+    width: 30%;
+    height: 100%;
+    background-color: #F7FFE5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.task-name input {
+    height: 40px;
+    width: 80%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px
+}
+
+.task-name input:focus {
+    outline: none;
+}
+
+.task-name button {
+    height: 40px;
+    width: 100px;
+    background-color: #C4D7B2;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
+
+.doing {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+}
+
+.doingTask,
+.doneList {
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.doingTask ul,
+.doneList ul {
+    width: 100%;
+    height: 95%;
+    background-color: #F7FFE5;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+ul li {
+    width: 90%;
+    height: 40px;
+    background-color: #A0C49D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-bottom: 10px;
+    font-size: larger;
+}
+
+.edit {
+    margin-right: 5px;
+
+}
+
+.doingTask ul li input[type=text],
+.doneList ul li input[type=text]{
+    display: none;
+}
+
+.doingTask ul li input[type=checkbox],
+.doneList ul li input[type=checkbox]{
+    margin-right: 10px;
+    height: 10px;
+}
+.doingTask ul li input[type=checkbox],
+.doneList ul li input[type=checkbox] {
+  width: 15px;
+  height: 15px;
+  transform: scale(1.5);
+}
+
+.doingTask ul li input[type=checkbox],
+.doneList ul li input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  border: 2px solid #555;
+  border-radius: 4px;
+}
+
+.doingTask ul li input[type=checkbox]:checked,
+.doneList ul li input[type=checkbox]:checked {
+  background-color: #555;
+}
+
+.doingTask ul .save {
+    margin-right: 5px;
+    display: none;
+}
+
+ul li input[type=text] {
+    display:none;
+}
+
+.doingTask ul li div .editMode input[type=text] {
+    display: inline;
+}
+
+ul li.editMode label {
+    display: inline;
+}
